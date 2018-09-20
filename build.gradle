@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'systems.cauldron'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //logging
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2+'
+
+    //unit testing
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5+'
+
+}
